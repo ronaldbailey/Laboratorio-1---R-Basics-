@@ -1,0 +1,12 @@
+```{r}
+1+1
+```
+```{r}
+
+system("git add .")
+system("git commit -m \"Commit desde R markdown\" ")
+system("git push")
+```
+```{r}
+getwd
+```
