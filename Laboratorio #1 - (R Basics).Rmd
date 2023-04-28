@@ -1,12 +1,6 @@
-```{r}
-1+1
-```
-```{r}
+---
+title: "Seguimiento de commits"
+output: html_notebook
+---
 
-system("git add .")
-system("git commit -m \"Commit desde R markdown\" ")
-system("git push")
-```
-```{r}
-getwd
-```
+
