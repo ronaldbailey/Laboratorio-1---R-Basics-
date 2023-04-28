@@ -29,3 +29,10 @@ system("git add .")
 system("git commit -m \"Reparacion de formatos\" ")
 system("git push")
 ```
+
+```{r}
+
+system("git add .")
+system("git commit -m \"Prueba de graficas\" ")
+system("git push")
+```

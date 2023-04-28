@@ -1,6 +1,12 @@
 ---
-title: "Seguimiento de commits"
+title: "Laboratorio 1"
 output: html_notebook
 ---
 
 
+
+
+
+```{r}
+plot(cars)
+```
