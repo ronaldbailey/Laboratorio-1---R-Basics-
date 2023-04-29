@@ -1,12 +1,12 @@
 ---
 title: "Laboratorio 1"
-output: html_notebook
+output: pdf_document
 ---
 
+Laboratorios #1 – Basics en R
 
-
-
-
-```{r}
-plot(cars)
-```
+Para esta y la siguiente parte deberá subir su solución en un archivo
+.R colocando la pregunta completa como comentario y su respuesta que
+considere adecuada.
+Escriba el código de R necesario para resolver los siguientes incisos
+trate de usar la menor cantidad de líneas posible. 
