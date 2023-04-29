@@ -138,3 +138,54 @@ cat("Desviación estándar:", sd(z), "\n")
 cat("Mediana:", median(z), "\n")
 cat("Moda:", moda(z), "\n")
 cat("Sumatoria total:", sum(z), "\n")
+
+
+####################################################################################################
+
+# 7. Sabemos que para sumar vectores estos deben tener la misma
+# longitud. Sin embargo R trabaja de manera distinta. Defina los
+# vectores x = (1, 2, 3, 4, 5, 6), y = (7, 8), 
+#z = (9, 10, 11, 12).
+#Calcula:
+# a. x + x
+# b. x + y.
+# c. Responda ¿Qué ha hecho R? 
+#   
+
+
+# Definir los vectores x, y y z
+x = c(1, 2, 3, 4, 5, 6)
+y = c(7, 8)
+z = c(9, 10, 11, 12)
+
+# Calcular y mostrar la suma de x + x
+cat("x + x:\n")
+suma_xx = x + x
+print(suma_xx)
+
+# Calcular y mostrar la suma de x + y
+cat("x + y:\n")
+suma_xy = x + y
+print(suma_xy)
+#################################################################################3
+
+# 
+# 8. Dada la variable string <- "Hola Mundo", escriba una instrucción
+# en R que devuelva la siguiente salida:
+#   [[1]]
+# [1] "Hola"
+# [[2]]
+# [1] "Mundo"
+
+
+string <- "Hola Mundo"
+words <- strsplit(string, " ")[[1]]
+
+result <- list()
+result[[1]] <- words[1]
+result[[2]] <- words[2]
+
+print(result)
+
+
+
