@@ -33,3 +33,30 @@ desviacion_estandar <- sd(numeros_filtrados)
 
 # Mostrar la desviación estándar
 print(desviacion_estandar)
+
+#########################################################################################################################
+# 
+# 3. Suponga que se almacena en una variable un arreglo con todos
+# los números de carnet de los estudiantes del Instituto de
+# Investigación de Operaciones de la universidad en forma de
+# string, los carnets tiene al inicio dos caracteres que
+# identifican el año en el que la persona entró a la universidad
+# por ejemplo: 19004528 hacer referencia a una persona que
+# ingreso en el año 2019, 06009878 hace referencia a una persona
+# que ingreso que el año 2006, ¿Cómo haría para contar la cantidad
+# de alumnos por año? 
+  
+
+
+# Crear un vector con los números de carnet de los estudiantes (en forma de string)
+numeros_carnet <- c("19004528", "06009878", "19002345", "06001529", "20001234", "21005678")
+
+# Extraer los dos primeros caracteres (año de ingreso) de cada carnet
+anios_ingreso <- substr(numeros_carnet, 1, 2)
+
+# Contar la cantidad de alumnos por año utilizando la función table()
+conteo_alumnos <- table(anios_ingreso)
+
+# Mostrar el conteo de alumnos por año
+print(conteo_alumnos)
+

@@ -48,6 +48,17 @@ system("git push")
 ```{r}
 
 system("git add .")
-system("git commit -m \"Primera y segunda pregunta" ")
+system("git commit -m \"Primera y segunda pregunta\" ")
+system("git push")
+```
+
+
+
+
+
+```{r}
+
+system("git add .")
+system("git commit -m \"Tercera preguta\" ")
 system("git push")
 ```
