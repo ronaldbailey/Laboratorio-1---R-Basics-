@@ -23,13 +23,13 @@ print(arreglo_aleatorio)
 
 set.seed(42) # Fijar una semilla para la reproducibilidad (esto tambien lo uso en python)
 
-arreglo <- sample(40:70, 120000, replace = TRUE)
+arreglo = sample(40:70, 120000, replace = TRUE)
 
 # Filtrar los números que son mayores a 55 y menores a 64
-numeros_filtrados <- arreglo[arreglo > 55 & arreglo < 64]
+numeros_filtrados = arreglo[arreglo > 55 & arreglo < 64]
 
 # Calcular la desviación estándar de los números filtrados
-desviacion_estandar <- sd(numeros_filtrados)
+desviacion_estandar = sd(numeros_filtrados)
 
 # Mostrar la desviación estándar
 print(desviacion_estandar)
@@ -46,17 +46,47 @@ print(desviacion_estandar)
 # que ingreso que el año 2006, ¿Cómo haría para contar la cantidad
 # de alumnos por año? 
   
-
-
 # Crear un vector con los números de carnet de los estudiantes (en forma de string)
-numeros_carnet <- c("19004528", "06009878", "19002345", "06001529", "20001234", "21005678")
+numeros_carnet = c("19004528", "06009878", "19002345", "06001529", "20001234", "21005678")
 
 # Extraer los dos primeros caracteres (año de ingreso) de cada carnet
-anios_ingreso <- substr(numeros_carnet, 1, 2)
+anios_ingreso = substr(numeros_carnet, 1, 2)
 
 # Contar la cantidad de alumnos por año utilizando la función table()
-conteo_alumnos <- table(anios_ingreso)
+conteo_alumnos = table(anios_ingreso)
 
 # Mostrar el conteo de alumnos por año
 print(conteo_alumnos)
 
+
+# ############################################################################################
+
+
+# 4. Define el vector y = (1, 3, 5, 7) utilizando la función c().
+# ¿Cómo lo harías con la función seq()? 
+
+
+
+y_c = c(1, 3, 5, 7)
+print(y_c)
+
+y_seq  = seq(from = 1, to = 7, by = 2)
+print(y_seq)
+
+
+#############################################################################################
+
+# 
+# 5. Si b <- list(a=1:10, c="Hola", d="XX"), escriba una expresión
+# en R que devuelva todos los elementos de la lista excepto los
+# elementos 4,6,7,8 del vector a. 
+
+
+# Crear la lista b con los elementos especificados
+b = list(a = 1:10, c = "Hola", d = "XX")
+
+# Modificar el vector a dentro de la lista b eliminando los elementos en las posiciones 4, 6, 7 y 8
+b$a = b$a[-c(4, 6, 7, 8)]
+
+# Imprimir la lista b modificada
+print(b)
