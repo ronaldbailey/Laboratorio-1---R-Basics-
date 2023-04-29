@@ -9,3 +9,8 @@ Para esta y la siguiente parte deberá subir su solución en un archivo
 considere adecuada.
 Escriba el código de R necesario para resolver los siguientes incisos
 trate de usar la menor cantidad de líneas posible. 
+
+
+# Primera parte
+https://github.com/ronaldbailey/Laboratorio-1---R-Basics-/blob/main/Primera_parte.R
+
