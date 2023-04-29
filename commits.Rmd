@@ -40,7 +40,14 @@ system("git push")
 ```{r}
 
 system("git add .")
-system("git commit -m \"Prueba de graficas\" ")
+system("git commit -m \"Creacion de archivos a utilizar\" ")
 system("git push")
 ```
 
+
+```{r}
+
+system("git add .")
+system("git commit -m \"Primera y segunda pregunta" ")
+system("git push")
+```
