@@ -73,3 +73,32 @@ system("git add .")
 system("git commit -m \"cuarta preguta\" ")
 system("git push")
 ```
+
+
+
+
+
+
+
+```{r}
+
+system("git add .")
+system("git commit -m \"sexta preguta\" ")
+system("git push")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

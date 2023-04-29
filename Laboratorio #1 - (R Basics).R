@@ -90,3 +90,51 @@ b$a = b$a[-c(4, 6, 7, 8)]
 
 # Imprimir la lista b modificada
 print(b)
+
+
+#############################################################################################
+
+# 
+# 6. Dado los siguientes vectores, muestre el código en R necesario
+# para declarar y calcular el promedio, deviación estándar,
+# mediana, moda y sumatoria total para los siguientes vectores:
+#   a.x=(8,7,6,5)
+# b. y = (3,3, 3, 3, 3, 3, 3, 3, 2, 2)
+# c. z = (1, 1.75, 2.5, 3.25, 4) 
+
+
+
+# Declarar los vectores x, y y z
+x = c(8, 7, 6, 5)
+y = c(3, 3, 3, 3, 3, 3, 3, 3, 2, 2)
+z = c(1, 1.75, 2.5, 3.25, 4)
+
+# Función para calcular la moda
+moda = function(v) {
+  tbl = table(v)
+  return(as.numeric(names(tbl)[which.max(tbl)]))
+}
+
+# Calcular y mostrar las estadísticas para el vector x
+cat("Vector x:\n")
+cat("Promedio:", mean(x), "\n")
+cat("Desviación estándar:", sd(x), "\n")
+cat("Mediana:", median(x), "\n")
+cat("Moda:", moda(x), "\n")
+cat("Sumatoria total:", sum(x), "\n\n")
+
+# Calcular y mostrar las estadísticas para el vector y
+cat("Vector y:\n")
+cat("Promedio:", mean(y), "\n")
+cat("Desviación estándar:", sd(y), "\n")
+cat("Mediana:", median(y), "\n")
+cat("Moda:", moda(y), "\n")
+cat("Sumatoria total:", sum(y), "\n\n")
+
+# Calcular y mostrar las estadísticas para el vector z
+cat("Vector z:\n")
+cat("Promedio:", mean(z), "\n")
+cat("Desviación estándar:", sd(z), "\n")
+cat("Mediana:", median(z), "\n")
+cat("Moda:", moda(z), "\n")
+cat("Sumatoria total:", sum(z), "\n")
