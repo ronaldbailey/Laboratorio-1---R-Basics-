@@ -26,7 +26,10 @@ class(info_estudiantes)
 
 
 # 2. ¿Cuantos elementos tiene info_estudiantes?
-length(info_estudiantes) 
-length(info_estudiantes$carnet)
-length(info_estudiantes$promedio)
+length(info_estudiantes) #3 variables
+length(info_estudiantes$carnet)#tiene 8000 datos
+length(info_estudiantes$promedio)#8000 datos
+length(info_estudiantes$promedio)#8000 datos
+
+
 
