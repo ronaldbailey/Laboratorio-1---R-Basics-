@@ -16,7 +16,7 @@
 
 ##########################Carga del archivo 
 load("Lab1/data.RData")
-
+dataset = data.frame(info_estudiantes)
 
 # 1. ¿Qué tipo de dato es info_estudiantes? 
 class(info_estudiantes)
@@ -26,12 +26,20 @@ class(info_estudiantes)
 
 
 # 2. ¿Cuantos elementos tiene info_estudiantes?
-length(info_estudiantes) #3 variables
-length(info_estudiantes$carnet)#tiene 8000 datos
-length(info_estudiantes$promedio)#8000 datos
-length(info_estudiantes$promedio)#8000 datos
+View(dataset)
+#tiene 8000 datos de 3 variables o columnas
+
 
 # 3. ¿Qué representa cada uno de los elementos de info_estudiantes? 
 View(info_estudiantes)
 #muestra carnet el promedio y tipo, con cuatro letras
+
+
+# 4. ¿Cuál es la media de los estudiantes ingresados en el año 2019?
+
+mean(dataset[substr(dataset$carnet, 1, 2) == "19",]$promedio)
+#70.85942
+
+
+
 
