@@ -41,6 +41,18 @@ mean(dataset[substr(dataset$carnet, 1, 2) == "19",]$promedio)
 #70.85942
 
 # 5. ¿Cuál es la suma de desviación estándar de los estudiantes que
-#ingresaron en el año 2016 y 2018?
+# ingresaron en el año 2016 y 2018?
 sd(dataset[substr(dataset$carnet, 1, 2) == "16",]$promedio)+sd(dataset[substr(dataset$carnet, 1, 2) == "18",]$promedio)
 #35.13241
+
+
+
+# 6. ¿Cuál es el mínimo de notas de aquellos estudiantes donde su
+# carnet termina con los números 45 a 48?
+  
+min(dataset[(substr(dataset$carnet,7, 8) == "45") | (substr(dataset$carnet,7, 8) == "48") ,]$promedio)
+#40
+
+# 7. ¿Cuál es la probabilidad de que un estudiante tipo A tenga una
+# nota mayor a 85?
+  
