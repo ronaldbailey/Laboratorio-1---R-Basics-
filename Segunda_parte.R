@@ -31,5 +31,7 @@ length(info_estudiantes$carnet)#tiene 8000 datos
 length(info_estudiantes$promedio)#8000 datos
 length(info_estudiantes$promedio)#8000 datos
 
-
+# 3. ¿Qué representa cada uno de los elementos de info_estudiantes? 
+View(info_estudiantes)
+#muestra carnet el promedio y tipo, con cuatro letras
 
