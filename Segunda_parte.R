@@ -40,6 +40,7 @@ View(info_estudiantes)
 mean(dataset[substr(dataset$carnet, 1, 2) == "19",]$promedio)
 #70.85942
 
-
-
-
+# 5. ¿Cuál es la suma de desviación estándar de los estudiantes que
+#ingresaron en el año 2016 y 2018?
+sd(dataset[substr(dataset$carnet, 1, 2) == "16",]$promedio)+sd(dataset[substr(dataset$carnet, 1, 2) == "18",]$promedio)
+#35.13241
