@@ -18,8 +18,15 @@
 load("Lab1/data.RData")
 
 
-#1. ¿Qué tipo de dato es info_estudiantes? 
-typeof(info_estudiantes)
+# 1. ¿Qué tipo de dato es info_estudiantes? 
+class(info_estudiantes)
 ######################El dato es tipo list
+######################Tambien dice eso en la parte derecha de R studio en la 
+######################seccion de enviroment
 
+
+# 2. ¿Cuantos elementos tiene info_estudiantes?
+length(info_estudiantes) 
+length(info_estudiantes$carnet)
+length(info_estudiantes$promedio)
 
