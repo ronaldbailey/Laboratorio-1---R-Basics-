@@ -14,6 +14,6 @@ trate de usar la menor cantidad de líneas posible.
 # Primera parte
 https://github.com/ronaldbailey/Laboratorio-1---R-Basics-/blob/main/Primera_parte.R
 
-# Primera parte
+# Segunda parte
 https://github.com/ronaldbailey/Laboratorio-1---R-Basics-/blob/main/Segunda_parte.R
 
