@@ -56,3 +56,6 @@ min(dataset[(substr(dataset$carnet,7, 8) == "45") | (substr(dataset$carnet,7, 8)
 # 7. ¿Cuál es la probabilidad de que un estudiante tipo A tenga una
 # nota mayor a 85?
   
+
+100*nrow( dataset[(dataset$tipo == "A") & (dataset$promedio >85 ),])/8000
+## la probabilidad es de 6.125 %
