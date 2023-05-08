@@ -59,3 +59,11 @@ min(dataset[(substr(dataset$carnet,7, 8) == "45") | (substr(dataset$carnet,7, 8)
 
 100*nrow( dataset[(dataset$tipo == "A") & (dataset$promedio >85 ),])/8000
 ## la probabilidad es de 6.125 %
+
+
+# 8. ¿Cuál es la probabilidad de que un estudiante tipo C haya
+# ingresado en el año 2017 o 2019?
+  
+
+100*nrow( dataset[(dataset$tipo == "C") & (substr(dataset$carnet,1, 2) == "17") | (substr(dataset$carnet,1, 2) == "19"),])/8000
+#  la probabilidad de que un estudiante tipo C haya ingresado en el año 2017 o 2019 es de 30.675

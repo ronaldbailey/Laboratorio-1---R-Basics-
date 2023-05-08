@@ -165,3 +165,12 @@ system("git add .")
 system("git commit -m \"Segunda parte 7\" ")
 system("git push")
 ```
+
+
+
+```{r}
+
+system("git add .")
+system("git commit -m \"Segunda parte 8\" ")
+system("git push")
+```
